@@ -1,14 +1,8 @@
-#include <sys/socket.h>
-#include <netinet/in.h>
-#include <netinet/ip.h>
-#include <netinet/tcp.h>
-#include <netinet/udp.h>
-#include <net/ethernet.h>
-#include <netinet/if_ether.h>
-#include <arpa/inet.h>
-#include <unistd.h>
-
 #include <string.h>
+#include <arpa/inet.h>
+#include "ethernet.hpp"
+#include "ip.hpp"
+#include "arp.hpp"
 
 void ethernet_handle(uint8_t* packet, size_t len) {
     ethernet_frame_t* frame = (ethernet_frame_t*)packet;

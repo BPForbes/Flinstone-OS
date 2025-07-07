@@ -1,14 +1,8 @@
-#include <sys/socket.h>
-#include <netinet/in.h>
-#include <netinet/ip.h>
-#include <netinet/tcp.h>
-#include <netinet/udp.h>
-#include <net/ethernet.h>
-#include <netinet/if_ether.h>
-#include <arpa/inet.h>
-#include <unistd.h>
-
 #include <string.h>
+#include "ip.hpp"
+#include "udp.hpp"
+#include "tcp.hpp"
+#include "icmp.hpp"
 
 void ip_handle(uint8_t* packet, size_t len) {
     ip_header_t* hdr = (ip_header_t*)packet;
