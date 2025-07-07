@@ -2,7 +2,9 @@
 #define AUTH_MANAGER_HPP
 
 #include <string>
+extern "C" {
 #include <sqlite3.h>
+}
 
 class AuthManager {
 public:
