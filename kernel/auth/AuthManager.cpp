@@ -1,5 +1,7 @@
 #include "AuthManager.hpp"
+extern "C" {
 #include <sodium.h>
+}
 #include <iostream>
 
 AuthManager::AuthManager(const std::string& db_path) {

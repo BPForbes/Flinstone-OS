@@ -1,5 +1,8 @@
 #include "AuthManager.hpp"
 #include <iostream>
+extern "C" {
+#include <sodium.h>
+}
 
 int main() {
     if (sodium_init() == -1) {
