@@ -2,8 +2,9 @@ Build Instructions:
 --------------------
 To build the shell with authentication and account control:
 
-1. Make sure you have sqlite3 and libsodium installed:
-   sudo apt install libsqlite3-dev libsodium-dev
+1. Install sqlite3 and the libsodium runtime library:
+   sudo apt install libsqlite3-dev libsodium23
+   (The required `sodium.h` header is bundled under `third_party/libsodium`.)
 
 2. Then run:
    make
