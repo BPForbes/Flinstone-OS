@@ -4,7 +4,7 @@ LDLIBS = -lsqlite3 -lsodium
 AUTH_SRC = kernel/auth/AuthManager.cpp
 SHELL_SRC = kernel/shell/ShellCommand.cpp kernel/shell/main_shell.cpp
 LWIP_SRC = $(wildcard lwip/src/*.cpp)
-INCLUDES = -Ikernel/auth -Ikernel/shell -Ilwip/include
+INCLUDES = -Ikernel/auth -Ikernel/shell -Ilwip/include -Ithird_party/libsodium
 
 all: shell
 
